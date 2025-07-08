@@ -1,0 +1,6 @@
+<!-- filepath: /Users/sorawit/Desktop/zpoom.github.io/src/assets/images/terminal-icon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="8" fill="#1e1e1e" />
+  <polyline points="16,24 28,32 16,40" fill="none" stroke="#00ff00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="36" y1="48" x2="48" y2="48" stroke="#00ff00" stroke-width="4" stroke-linecap="round" />
+</svg>
