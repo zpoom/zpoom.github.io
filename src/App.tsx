@@ -1,20 +1,13 @@
-import React from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import './assets/styles/index.css';
+import React from "react";
+import Header from "./components/Header";
+import "./assets/styles/index.css";
+import TerminalProfile from "./components/TerminalProfile";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Header />
       <main>
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
+        <TerminalProfile />
       </main>
     </div>
   );

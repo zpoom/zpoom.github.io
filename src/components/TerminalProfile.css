@@ -1,0 +1,84 @@
+.terminal {
+  width: 80%; /* Default width for desktop */
+  max-width: 800px; /* Limit width for larger screens */
+  height: 500px; /* Fixed height for desktop */
+  margin: 50px auto; /* Center terminal on desktop */
+  background: #1e1e1e;
+  border-radius: 8px; /* Ensure border radius is applied */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for desktop */
+  color: #00ff00;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent content from overflowing the rounded corners */
+}
+
+/* Fullscreen for mobile */
+@media (max-width: 768px) {
+  .terminal {
+    width: 100%; /* Full width for mobile */
+    height: 100vh; /* Full height of the viewport for mobile */
+    margin: 0; /* Remove margin for mobile */
+    border-radius: 0; /* Remove border radius for fullscreen */
+    box-shadow: none; /* Remove shadow for fullscreen */
+  }
+}
+
+.terminal-header {
+  background: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.terminal-title {
+  font-weight: bold;
+}
+
+.terminal-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.terminal-line {
+  margin-bottom: 5px;
+}
+
+.terminal-line.error {
+  color: #ff0000; /* Red color for unknown commands */
+}
+
+.terminal-input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #333;
+}
+
+.terminal-prompt {
+  color: #00ff00;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff; /* Change input command color to white */
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 1rem;
+  outline: none;
+}
+
+.terminal-suggestion {
+  color: #808080; /* Grey color for suggestion */
+  margin-left: 10px;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 1rem;
+  opacity: 0.8; /* Slight transparency for a subtle look */
+}
+
+.unknown-command {
+  color: #ff0000; /* Change unknown command color to red */
+}
